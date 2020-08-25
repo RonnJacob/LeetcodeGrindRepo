@@ -71,16 +71,16 @@ public class ReorderDataInLogFiles{
         System.out.println("937. Reorder Data in Log Files\n");
 
         // Leetcode Example.
-        String[] logs1 = new String[] {"dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"};
+        // String[] logs1 = new String[] {"dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"};
 
         // Only letters
-        String[] logs2 = new String[] {"let1 art can","let2 own kit dig","let3 art zero"};
+        // String[] logs2 = new String[] {"let1 art can","let2 own kit dig","let3 art zero"};
 
         // Only letters - tie.
         String[] logs3 = new String[] {"let2 art zero","let3 own kit dig","let1 art zero"};
 
         //Only digit
-        String[] logs4 = new String[] {"dig2 3 6", "dig3 1 9","dig1 4 3"};
+        // String[] logs4 = new String[] {"dig2 3 6", "dig3 1 9","dig1 4 3"};
 
         reorderLogFiles(logs3);
         System.out.println();

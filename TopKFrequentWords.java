@@ -29,7 +29,6 @@ public class TopKFrequentWords {
         System.out.println("\n692. Top K Frequent Words");
         String[] words = new String[]{"i", "love", "leetcode", "i", "love", "coding"};
         String[] words2 = new String[]{"the", "day", "is", "sunny", "the", "the", "the", "sunny", "is", "is"};
-        int k=2;
         int k2 = 4;
         System.out.println("Words: " + Arrays.toString(words));
 
