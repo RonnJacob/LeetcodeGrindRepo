@@ -1,4 +1,7 @@
 import java.util.*;
+
+// Basically do a mapping of each of the last occurence of each character.
+// Check if the biggest last occurence has been reached, if so add it and reset counter.
 public class PartitionLabels {
 
     public static List<Integer> partitionLabel(String S){
