@@ -1,4 +1,5 @@
 import java.util.*;
+
 public class GroupAnagrams {
  
     public static String initializeCharArrayCounter(String word){

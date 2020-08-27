@@ -1,4 +1,9 @@
-import java.util.*;
+import java.util.Map;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.TreeMap;
+import java.util.Collections;
 
 class TrieNode{
     TrieNode[] children = new TrieNode[26];
@@ -60,12 +65,43 @@ public class SearchSuggestionsSystem {
         return res;
         
     }
+
+    public static List<List<String>> suggestedProducts2(String[] products, String searchWord) {
+        List<List<String>> res = new ArrayList<>();
+        Arrays.sort(products);
+        TreeMap<String, Integer> treemap = new TreeMap<>();
+        List<String> productlist = Arrays.asList(products);
+        
+        for(int i=0; i<products.length; i++){
+            treemap.put(products[i],i);
+        }
+        
+        String str = "";
+        for(char c : searchWord.toCharArray()){
+            str+=c;
+            String lower = treemap.ceilingKey(str);
+            String upper = treemap.floorKey(str+"~");
+            if(lower == null || upper == null)break;
+			int end = Math.min(treemap.get(lower)+3, treemap.get(upper)+1);
+            res.add(productlist.subList(treemap.get(lower), end));
+        
+        }
+        
+        while(res.size() < searchWord.length()){
+            res.add(new ArrayList<>());
+        }
+        return res;
+    }
     public static void main(String[] args){
         System.out.println("\n 1268. Search Suggestions System\n");
         String[] products = {"mobile","mouse","moneypot","monitor","mousepad"};
         String searchWord = "mouse";
         System.out.println();
         suggestedProducts(products, searchWord);
+
+
+        suggestedProducts2(products, searchWord);
+
     }
     
 }
