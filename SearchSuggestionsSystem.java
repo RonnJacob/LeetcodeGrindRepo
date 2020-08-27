@@ -1,4 +1,3 @@
-import java.util.Map;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -76,11 +75,11 @@ public class SearchSuggestionsSystem {
             treemap.put(products[i],i);
         }
         
-        String str = "";
+        StringBuilder sb = new StringBuilder("");
         for(char c : searchWord.toCharArray()){
-            str+=c;
-            String lower = treemap.ceilingKey(str);
-            String upper = treemap.floorKey(str+"~");
+            sb.append(c);
+            String lower = treemap.ceilingKey(sb.toString());
+            String upper = treemap.floorKey(sb.toString()+"~");
             if(lower == null || upper == null)break;
 			int end = Math.min(treemap.get(lower)+3, treemap.get(upper)+1);
             res.add(productlist.subList(treemap.get(lower), end));
