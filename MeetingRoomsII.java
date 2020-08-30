@@ -29,6 +29,8 @@ public class MeetingRoomsII {
         int[][] intervals = new int[][]{{0, 30}, {5, 10}, {15, 20}};
         int[][] intervals2 = new int[][]{{7,10}, {2,4}};
         int[][] intervals3 = new int[][]{{1, 10}, {2, 7}, {3, 19},{8,12},{10, 20}, {11, 30}};
+        System.out.println(minMeetingRooms(intervals));    
+        System.out.println(minMeetingRooms(intervals2));    
         System.out.println(minMeetingRooms(intervals3));    
 
     }
