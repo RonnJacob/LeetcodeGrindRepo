@@ -32,7 +32,6 @@ public class MeetingRoomsII {
         System.out.println(minMeetingRooms(intervals));    
         System.out.println(minMeetingRooms(intervals2));    
         System.out.println(minMeetingRooms(intervals3));    
-
     }
     
 }
