@@ -40,6 +40,7 @@ public class FirstUnique {
     }
 
     public static void main(String[] args){
+        System.out.println("\n1429. First Unique Number\n");
         FirstUnique obj = new FirstUnique(new int[]{1});
         obj.add(1);
         obj.add(1);
