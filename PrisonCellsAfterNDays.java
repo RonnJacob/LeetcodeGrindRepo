@@ -1,40 +1,34 @@
-
 import java.util.*;
 public class PrisonCellsAfterNDays {
 
-    public static void occupyCells(int[] cells){
-        Map<Integer, Integer> cellsMapping = new HashMap<>();
-        for(int i=0; i<cells.length; i++){
-            cellsMapping.put(i, cells[i]);
-        }
-
-
-        for(int i=1; i<cells.length-1; i++){
-            if(cellsMapping.get(i-1) == cellsMapping.get(i+1)){
-                cells[i] = 1;
+    public static int[] prisonAfterNDays(int[] cells, int N) {
+        
+        Map<String, Integer> map = new HashMap<>();
+        int circle = 0;
+        while(N-- > 0){
+            int[] prison = new int[cells.length];
+            map.put(Arrays.toString(cells), circle++);
+            for(int i=1; i<7; i++){
+                prison[i] = cells[i-1] == cells[i+1] ? 1 : 0;
             }
-            else{
-                cells[i] = 0;
-            }
-        }
-        cells[0] = 0;
-        cells[cells.length-1] = 0;
-    }
+            cells = prison;
 
-    public static void showInmates(int[] cells){
-        for(int i=0; i<cells.length; i++){
-            System.out.print(cells[i] + " ");
-        }
-        System.out.println();
+            if(map.containsKey(Arrays.toString(cells))){
+                N %= circle - map.get(Arrays.toString(cells));
+            }
+        }        
+        
+        return cells;
+
     }
     public static void main(String[] args){
         System.out.println("\n957. Prison Cells After N Days");
         int[] cells = new int[]{0,1,0, 1,1,0,0,1};
-        for(int i=0; i<7; i++){
-            occupyCells(cells);
-            showInmates(cells);
-        }
+        int[] resultant = prisonAfterNDays(cells, 7);
+        System.out.println(Arrays.toString(resultant));
+        
 
     }
+
     
 }
