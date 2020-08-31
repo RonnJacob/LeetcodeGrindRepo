@@ -2,46 +2,44 @@ import java.util.*;
 public class WordLadder {
 
     public static int ladderLength(String beginWord, String endWord, List<String> wordList){
-        Set<String> wordListSet = new HashSet();
-
-        for(String word: wordList){
-            wordListSet.add(word);
+        Set<String> set = new HashSet<>();
+        Set<String> seen = new HashSet<>();
+        for(String i : wordList){
+            set.add(i);
         }
-        
-        if(!wordListSet.contains(endWord)){
-            System.out.println("0");
+        if(!set.contains(endWord)){
             return 0;
         }
-        Queue<String> queue = new LinkedList<>();
+        LinkedList<String> q = new LinkedList<>();
+        q.add(beginWord);
+		seen.add(beginWord);
         int level = 1;
-
-        queue.offer(beginWord);
-        
-        while(!queue.isEmpty()){
-            for(int i=0; i<queue.size(); i++){
-                String word = queue.poll();
-                char[] wordArray = word.toCharArray();
-                for(int j=0; j<wordArray.length; j++){
-                    char originalChar = wordArray[j];
-                    for(char k = 'a' ; k<'z'; k++){
-                        if(wordArray[j] == k) continue;
-                        wordArray[j] = k;
-                        String wordUpdated = String.valueOf(wordArray);
-                        if(wordUpdated.equals(endWord)){
+        while(!q.isEmpty()){
+            int size = q.size();
+            for(int k = 0; k<size; k++){
+                String word = q.poll();
+                char[] w=word.toCharArray();
+                for(int i = 0; i<w.length; i++){
+                    char c = w[i];
+                    for(char replace = 'a'; replace<='z'; replace++){
+                        if(replace==c)
+                            continue;
+                        w[i] = replace;
+                        String newWord = String.valueOf(w);
+                        if(newWord.equals(endWord)){
                             return level+1;
                         }
-
-                        if(wordListSet.contains(wordUpdated)){
-                            wordListSet.remove(wordUpdated);
-                            queue.offer(wordUpdated);
+                        if(!seen.contains(newWord) && set.contains(newWord)){
+                            q.add(newWord);
                         }
+                        seen.add(newWord);
                     }
-                    wordArray[j] = originalChar;
+                    w[i] = c;
                 }
             }
             level++;
         }
-        return level;
+        return 0;
     }
     public static void main(String[] args){
         System.out.println("\n127. Word Ladder");
