@@ -47,4 +47,9 @@ public class SnakeGame{
             return this.x == other.x && this.y == other.y;
         }
     }
+
+    public static void main(String[] args){
+        System.out.println("\n353. Design Snake Game\n");
+        
+    }
 }
