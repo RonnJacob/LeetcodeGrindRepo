@@ -1,14 +1,5 @@
 import java.util.*;
 
-class BoardCell{
-    int x;
-    int level;
-    BoardCell(int x, int level){
-        this.x = x;
-        this.level = level;
-    }
-}
-
 public class SnakesandLadders {
 
     public int snakesAndLadders(int[][] board) {
