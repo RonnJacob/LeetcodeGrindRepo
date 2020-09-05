@@ -74,6 +74,7 @@ public class NumberofAtoms {
     public static void main(String[] args){
         System.out.println("\n726. Number of Atoms");
         String formula = "K4(ON(SO3)2)2";
+
         countOfAtoms(formula);
     }
     
