@@ -3,6 +3,8 @@ public class CriticalConnectionsInANetwork {
 
     static List<List<Integer>> graph = new ArrayList<>();
     static int numNodes = 0;
+    static int[] timestamps;
+    static int timer = 0;
 
 
     public static void buildGraph(int n, List<List<Integer>> connections){
@@ -28,7 +30,7 @@ public class CriticalConnectionsInANetwork {
         }
     }
 
-    public static List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
+    public static List<List<Integer>> criticalConnections2(int n, List<List<Integer>> connections) {
 
 
         List<List<Integer>> result = new ArrayList<>();
@@ -49,6 +51,36 @@ public class CriticalConnectionsInANetwork {
         }
         return result;
     }
+
+
+    public static void traverseConnections(int currNode, int parent, List<List<Integer>> graph, boolean[] visited, List<List<Integer>> results){
+    
+        visited[currNode] = true;
+        timestamps[currNode] = timer++;
+        int currentTimeStamp = timestamps[currNode];
+        
+        for(int oneNeighbour : graph.get(currNode)) {
+            if(oneNeighbour == parent) continue;
+            if(!visited[oneNeighbour]) traverseConnections(oneNeighbour, currNode, graph, visited, results);
+            timestamps[currNode] = Math.min(timestamps[currNode], timestamps[oneNeighbour]);
+            if(currentTimeStamp < timestamps[oneNeighbour]) results.add(Arrays.asList(currNode, oneNeighbour));
+        }
+    }
+
+    public static List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
+        buildGraph(n, connections);
+        timestamps = new int[n];
+        timer = 0;
+        boolean[] visited = new boolean[n];
+        List<List<Integer>> results = new ArrayList<>();
+        traverseConnections(0, -1, graph, visited, results);
+        
+        return results;
+    }
+
+
+
+
 
     public static void main(String[] args){
         System.out.println("\n1192: Critical Connections In a Network ");
