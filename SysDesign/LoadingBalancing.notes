@@ -1,0 +1,37 @@
+== What is Loading Balancing ==
+
+- Spreads traffic across a cluster of servers.
+- Increases availability by preventing one single server from being a single point of failure.
+- Smart LBs give predictive insights for traffic bottlenecks before they happen. Can give organization actionable insights.
+
+== LB Algorithms == 
+
+Considers two factors before forwarding 
+1. Check to see if the server they choose is appropriately responding.
+2. Use an algorithm to select a server from a list of healthy servers.
+
+Health Checks:
+- We have health checks for each server which ensure that server is up and running.
+- If a server fails a health check, the server is essentially removed from the pool of servers to send to.
+
+== Load Balancing Methods ==
+
+1. Least Connection Method: When you have a lot of persistent connections unevenly distributed between servers,
+you want to choose the server with the least connections.
+
+2. Least Response Time Method: Directs traffic to the server with the fewest active connections and the lowest average
+response time.
+
+3. Least Bandwidth Method: Server serving the least amount of traffic measured in Mbps.
+
+4. Round Robin Method: Useful when there aren't a lot of persistent connections, and the server specs are all the same.
+
+5. Weighted Round Robin Method: Useful when the server specs vary, in which case we send traffic to bigger ones with higher weights.
+
+6. IP Hash: Hash of the IP address of the client is calculated to determine which server to send the request to.
+
+== Redundant LB ==
+
+- Paradox haha. Sometimes LBs can fail so you might want to add another LB to check the health of that LB. Whichever is healthy can route the requests. 
+
+
