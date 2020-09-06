@@ -1,0 +1,18 @@
+== Proxy ==
+
+- Proxies are used to filter requests, log requests, transform requests (add or remove headers, 
+encrypting/decrypting headers, or compressing a resource)
+
+- Proxy servers can itself cache and service a lot of requests.
+
+- Proxy can reside on the client's local server and anywhere between the client and the remote servers
+
+Open Proxy vs Closed Proxy
+
+Closed Proxy - Only for users within a network group to store and forward requests to 
+control bandwidth usage by the group.
+
+Open Proxy - 1. Anonymous: Hides initial IP and it looks like the requests is coming from the proxy server
+             2. Transparent
+
+Reverse Proxy
