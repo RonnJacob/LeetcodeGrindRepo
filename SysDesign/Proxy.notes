@@ -16,3 +16,13 @@ Open Proxy - 1. Anonymous: Hides initial IP and it looks like the requests is co
              2. Transparent
 
 Reverse Proxy
+
+== Replication ==
+
+To increase reliability, fault tolerance, and accessibility.
+
+Eliminates SPOF
+
+Leader, Replicas receive updates to keep it consistent
+
+Consistency issues in Distributed Systems
