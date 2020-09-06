@@ -1,0 +1,60 @@
+== Caching ==
+
+- Locality of Reference: Recently requested data is likely to be requested again.
+- Caches tend to be closer to area of request which would be the front end.
+    - This is to prevent sending taxing requests downstream.
+
+- Placing a cache on the request layer is helpful in the sense that you wouldn't have
+to send the requests downstream.
+
+        --> Memory (which is very fast)
+Caches -
+        --> Node's local disk (faster than going to network storage)
+
+
+Problem with storing on Node's local disk is that the load balancer might route
+requests to different nodes, due to which there might be a lot of cache misses.
+-- Global Caches & Distributed Caches fix this problem.
+
+== CDN == 
+
+- Good for static media loading. 
+- Request - CDN checks to have it. Return if it does - If it doesn't, query backend servers and return it.
+
+If system isn't large enough to have its own CDN, Nginx is a good lightweight HTTP server.
+
+
+
+== Cache Invalidation == 
+
+Three schemes to maintain consistency. What if you change data in the db, but the cache shows something else?
+
+- Write-through cache : Data written to the cache, and the db at the same time.
+    - Allows for fast retrieval.
+    - But higher latency when it comes to writing due to two write operations.
+    - Minimizes risk of data loss.
+
+- Write-around cache : Data is written onto the DB, and not on the cache to prevent cache flooding.
+More cache misses.
+
+- Write-back cache : Data is written to the cache alone, and completion is immediately confirmed to the client. Writing is only 
+after certain conditions. Risk of data loss.
+
+
+== Cache Eviction Policies == 
+
+1. FIFO : What it says.
+
+2. LIFO : What it says.
+
+3. LRU : Discards the least recently used.
+
+4. MRU: Discards the most recently used.
+
+5. LFU: Least frequently used.
+
+6. RR: Random Replacement.
+
+
+
+
