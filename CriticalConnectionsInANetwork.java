@@ -58,6 +58,7 @@ public class CriticalConnectionsInANetwork {
         visited[currNode] = true;
         timestamps[currNode] = timer++;
         int currentTimeStamp = timestamps[currNode];
+
         
         for(int oneNeighbour : graph.get(currNode)) {
             if(oneNeighbour == parent) continue;
