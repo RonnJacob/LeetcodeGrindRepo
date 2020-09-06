@@ -1,0 +1,11 @@
+== INDEXES ==
+
+- Best way to speed up DB performance.
+- Goal of indexes is to speed up search of particular table in a DB to make it faster to 
+search through the table, and find the row/rows that we want.
+
+Even though indexes can speed up data retrieval, it may itself be large due to 
+additional keys which slow down data insertion & update.
+
+If we're going to use a data store for more writing than reading, then indexes decrease
+performance due to which we shouldn't use indexes.
