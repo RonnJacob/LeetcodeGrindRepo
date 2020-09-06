@@ -1,0 +1,43 @@
+== Data Partitioning ==
+
+Splitting up a DB/table across multiple machines to improve performance, availability,
+manageability, and load balancing of an application.
+
+After a point, it is much more cheaper and feasible to add more machines and scale horizontally.
+
+== Partitioning Schemes == 
+
+Schemes to break up DB/tables into smaller tables.
+
+1. Horizontal Partitioning : Sharding. Splitting data between different tables. 
+
+2. Vertical Partitioning: If we are building large applications, we split data related
+to features among different servers.
+
+3. Directory Based Partitioning: We basically have a mapping of the tuple key to its DB server.
+It would know the Partitioning scheme already. We can add servers to the DB pool or change
+our Partitioning scheme without having an impact to the application.
+
+== Partitioning Criteria ==
+
+1. Key or Hash Based Partitioning: Under this scheme, we would apply a hash function to some 
+key attributes of the entity we are storing; that yields the parition number. 
+Problem with this is that we would need downtime to add servers.
+Consistent Hashing: 
+
+2. List Partitioning: Assign a list of values so that whenever we want to insert a new record, 
+we could just store the row in that address.
+
+3. Round Robin Partitioning: Same disadvantage as round robin.
+
+4. Composite Partitioning: A combination of any of the above partitioning schemes.
+
+== Common Problems ==
+
+1. Joins and Denormalization.
+2. Referential Integrity. - Many RDBMS don't support foreign key constraints across databases
+on different servers.
+3. Rebalancing
+- Sometimes the data isn't distributed evenly.
+- Lot of load on a partition.
+- We have SPOF if we take directory based partitioning
