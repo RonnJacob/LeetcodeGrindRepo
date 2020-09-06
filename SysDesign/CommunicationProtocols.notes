@@ -1,0 +1,27 @@
+Long Polling, WebSockets, and Server-Sent Events are communication protocols between clients and web servers.
+
+== Ajax Polling ==
+
+Problem with this is spamming the server with empty HTTP requests. This creates HTTP overhead.
+You basically request, and keep requesting for updates.
+
+== HTTP Long Polling ==
+
+We have a Hanging GET. Where the client expects the server to take time.
+
+The reason we sent continuously is to maintain the connection between the server and the client.
+The client typically sends a new long-poll request either immediately upon receiving a response or after
+a pause to allow an acceptable latency period.
+
+
+== WebSockets ==
+
+Fully duplex over TCP connection.
+low overheads
+facilitating realtime data transfer from and to the server.
+- bidirectional.
+
+== SSE ==
+
+SSEs are good if we have multiple updates from a server constantly.
+We open a connection via a request, and a server would continuously send data whenever data is available.
