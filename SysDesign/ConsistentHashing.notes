@@ -1,0 +1,16 @@
+== Consistent Hashing == 
+
+Distributed Hash Tables are fundamental in distributed systems.
+
+Hash Function Modulo Server count is not horizontally scalable, making servers unavailable.
+
+Sometimes the load may not be balanced.
+
+
+- Consistent Hashing minimizes reorganization when nodes are added or removed.
+- Caching system will be easier to scale up or down.
+
+- Only k/n needs to be remapped. All keys need to be remapped.
+- When a server is added, we split the data between caches.
+- We have virtual replicas to load balance.
+- If the hash function mixes well, the number of replicas increases.
