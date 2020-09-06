@@ -1,0 +1,24 @@
+Scalability
+
+- Horizontal Scaling is by adding more servers to our existing infrastructure. This can be done easily with MongoDB
+because the cost of adding new servers is lesser. And we can do this because of sharding. MongoDB and Cassandra.
+
+- Vertical Scaling is by adding more capacity to the existing server. MySQL.
+
+
+Reliability
+- You have to pay a cost for redundancy to eliminate that single point of failure. Have copies of the same data possibly
+on different servers.
+
+Availability
+- Something that can be available without a lot of downtime is said to be highly available.
+- A system that is highly reliable is always available. But not always vice versa.
+
+Efficiency
+- Metrics : Latency (Efficiency/Response time) & Throughput (Number of items delivered in a given time)
+- We cannot always estimate system costs because of the changes in network topology, network load, variation in software and hardware components.
+
+Serviceability or Manageability
+- If something is hard to service or fix, then availability decreases. 
+- Ease of diagnosing, Ease of making updates and modifications, How simple it is to operate the system.
+- Early detection of faults help increase availabilty  and reduce downtime.
