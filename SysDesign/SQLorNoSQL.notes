@@ -1,0 +1,36 @@
+== SQL == 
+
+Each row contains data about a single entity and each of the columns are all data
+points about that single entity.
+
+. MySQL, SQLServer, MariaDB, Postgres, SQLite, Oracle
+
+== NoSQL == 
+
+1. Key-Value : Key is the attribute name, linked to a value. DynamoDB, Voldemort, Redis.
+
+2. Document: Data is stored as documents in a collection. Document databases include the CouchDB and MongoDB.
+
+3. Wide-Column Databases: When we don't really know the number of columns up front, we can use Cassandra, HBase. All rows can have different number of columns.
+
+4. Graph Databases: Storing data who's relations are best represented as a graph. With graph nodes, their properties, and entities.
+Neo4j and InfiniteGraph.
+
+
+== Choices == 
+
+1. NoSQL databases are popular because of speed and scalability, but sometimes you need structure.
+
+2. SQL: When you need ACID to protect integrity of DB, and if there isn't massive growth and change in the structure of data, then SQL.
+   NoSQL: BigData is handing its success off to NoSQL because if everything is fast, and the reason your bottle neck is existing is because of data. You
+   want to use NoSQL. Lesser preptime, you can rapidly develop, store large volumes of data with no structure, 
+
+
+== CAP Theorem == 
+
+
+Consistency, Availability, Partition Tolerance.
+
+- Stop serving requests from out of date partitions at the risk of availability.
+- Client might read out of date partitions because of partition tolerance not there.
+- Consistency not there.    
