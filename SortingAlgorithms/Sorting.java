@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Sorting {
     
+    // BUBBLE SORT
     public static int[] bubbleSort(int[] arr){
         for(int i=0; i<arr.length; i++){
             for(int j=0; j<arr.length-i-1; j++){
@@ -18,6 +19,7 @@ public class Sorting {
     }
 
 
+    // SELECTION SORT
     public static int[] selectionSort(int[] arr){
         for(int i=0; i<arr.length; i++){
             int temp = i;
@@ -35,6 +37,8 @@ public class Sorting {
         return arr;
     }
 
+
+    // INSERTION SORT
     public static int[] insertionSort(int[] arr){
         for(int i=1; i<arr.length; i++){
             int element = arr[i];
@@ -49,7 +53,6 @@ public class Sorting {
     }
 
     // MERGE SORT
-
     public static void merge(int[] arr, int l, int m, int r){
         int n1 = m-l +1;
         int n2 = r-m;
@@ -107,8 +110,7 @@ public class Sorting {
         } 
     }
     
-    // Partition Element
-
+    // QUICKSORT - O(n) Best Case | O(n^2) - Worst Case | Not stable | In Place 
     public static int partition(int[] arr, int l, int r){
         int pivot = arr[r];
         int i = l-1;
@@ -138,6 +140,48 @@ public class Sorting {
         }
     }
     
+
+    // HEAP SORT
+
+    public static void heapify(int[] arr, int n, int i){
+        int largest = i;
+        int l = 2*i + 1;
+        int r = 2*i + 2;
+
+        if(l<n && arr[l] > arr[largest]){
+            largest = l;
+        }
+        
+        if(r<n && arr[r] > arr[largest]){
+            largest = r;
+        }
+        
+        if(largest != i){
+            int temp = arr[largest];
+            arr[largest] = arr[i];
+            arr[i] = temp;
+
+            heapify(arr, n, largest);
+        }
+    }
+
+    public static void heapsort(int[] arr){
+        for(int i=arr.length/2-1; i>=0; i--){
+            heapify(arr, arr.length, i);
+        }
+
+        for(int i=arr.length-1; i>0; i--){
+            int temp = arr[0];
+            arr[0] = arr[i];
+            arr[i] = temp;
+
+            heapify(arr, i, 0);
+
+        }
+
+        
+    }
+
     public static void main(String[] args){
 
 
@@ -168,6 +212,12 @@ public class Sorting {
         System.out.println(Arrays.toString(arr5));
         quickSort(arr5, 0, 6);
         System.out.println(Arrays.toString(arr5));
+
+        int  arr6[]={100,20,15,30,5,75,40};
+        System.out.println("\n Heap Sort\n");
+        System.out.println(Arrays.toString(arr6));
+        heapsort(arr6);
+        System.out.println(Arrays.toString(arr6));
 
 
     }
