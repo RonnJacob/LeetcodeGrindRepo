@@ -121,7 +121,7 @@ public class LFUCache{
 
 
     public static void main(String[] args){
-        System.out.println("\n LFU Cache");
+        System.out.println("\n460. LFU Cache");
 
         LFUCache cache = new LFUCache(0);
         cache.put(1,1);
