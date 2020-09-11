@@ -38,6 +38,8 @@ public class FindMedianfromDataStream {
             return (double)lo.peek();
         }
     }
+
+    
     public static void main(String[] args){
         System.out.println("\n295. Find Median from Data Stream");
         FindMedianfromDataStream s = new FindMedianfromDataStream();
