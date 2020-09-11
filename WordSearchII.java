@@ -1,6 +1,5 @@
 import java.util.*;
-public class Trie {
-
+public class WordSearchII {
     class TrieNode{
         public TrieNode[] children;
         private boolean isEnd;
@@ -28,7 +27,7 @@ public class Trie {
     }
 
     private TrieNode root;
-    public Trie(){
+    public WordSearchII(){
         root= new TrieNode();
     }
 
@@ -124,7 +123,7 @@ public class Trie {
    
 
     public static void main(String[] args){
-        System.out.println("\n208. Implement Trie (Prefix Tree)");
+        System.out.println("\n212. Word Search II");
         Trie tr = new Trie();
         String[] words = new String[]{"aba","baa","bab","aaab","aaa","aaaa","aaba"};
         char[][] board = new char[][]{{'a','b'}, {'a', 'a'}};
