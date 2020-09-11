@@ -1,5 +1,6 @@
 import java.util.*;
 
+
 public class WordBreakII {
     class TrieNode{
         private TrieNode[] children;
@@ -83,29 +84,38 @@ public class WordBreakII {
         if(!p1.containsLetter(word.charAt(0))){
             return;
         }
-
         p1 = p1.getTrieNodeForLetter(word.charAt(0));
+        int newWordAdded = -1;
         while(i<word.length()){
             if(p1.isEnd()){
                 result += p1.getWord() + " ";
+                newWordAdded = p1.getWord().length() + 1;
                 if(i==word.length()-1){
-
-                    System.out.println(result);
+                    results.add(result.trim());
+                    break;
                 }
                 getOneExampleWordBreak(word.substring(i+1), result, results);
-                break;
             }
-            else{
-                if(!p1.containsLetter(word.charAt(i+1))){
-                    return;
-                }
-                p1 = p1.getTrieNodeForLetter(word.charAt(i+1));
-                i++;
+
+
+            
+            if(newWordAdded != -1){
+                result = result.substring(0,result.length()-newWordAdded);
+                newWordAdded = -1;
             }
+
+            if(i+1 >= word.length()){
+                return;
+            }
+            if(!p1.containsLetter(word.charAt(i+1))){
+                return;
+            }
+            p1 = p1.getTrieNodeForLetter(word.charAt(i+1));
+            i++;
         }
     }
 
-    public void wordBreak(String s, List<String> wordDict) {
+    public List<String> wordBreak(String s, List<String> wordDict) {
 
         // Insert every word in the trie.
         for(String word: wordDict){
@@ -116,13 +126,15 @@ public class WordBreakII {
         String result = "";
         List<String> resultant = new ArrayList<>();
         getOneExampleWordBreak(s, result, resultant);
-        System.out.println(result);
+        System.out.println(resultant.toString());
+        return resultant;
     }
 
     public static void main(String[] args){
         System.out.println("\n140. Word Break II");
         WordBreakII obj = new WordBreakII();
-        obj.wordBreak("catsanddog", Arrays.asList("cat", "cats", "and", "sand", "dog"));
+        obj.wordBreak("bb", Arrays.asList("a","b","bbb","bbbb"));
+        
 
     }
     

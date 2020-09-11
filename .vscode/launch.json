@@ -1,0 +1,392 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AddTwoNumbers<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "AddTwoNumbers",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AlienDictionary<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "AlienDictionary",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AllNodesDistanceKInBinaryTree<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "AllNodesDistanceKInBinaryTree",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-AnalyzeUserWebsiteVisitPattern<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "AnalyzeUserWebsiteVisitPattern",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BasicCalculatorII<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "BasicCalculatorII",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BestTimeToBuyAndSellStocks<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "BestTimeToBuyAndSellStocks",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ConcatenatedWords<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "ConcatenatedWords",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CopyListWithRandomPointer<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "CopyListWithRandomPointer",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CourseScheduleII<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "CourseScheduleII",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-CriticalConnectionsInANetwork<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "CriticalConnectionsInANetwork",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Director<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "Design.BuilderPattern.DocumentBuilder.Director",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Main<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "Design.BuilderPattern.F16.Main",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FileSystem<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "FileSystem",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FindMedianfromDataStream<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "FindMedianfromDataStream",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FirstUnique<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "FirstUnique",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FloodFill<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "FloodFill",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GroupAnagrams<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "GroupAnagrams",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HouseRobber<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "HouseRobber",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-KClosestPointsToOrigin<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "KClosestPointsToOrigin",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LFUCache<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "LFUCache",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LRUCache<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "LRUCache",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-LongestPalindromicSubstring<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "LongestPalindromicSubstring",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MeetingRoomsII<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "MeetingRoomsII",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MergeIntervals<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "MergeIntervals",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MinimumCosttoConnectSticks<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "MinimumCosttoConnectSticks",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MostCommonWord<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "MostCommonWord",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NumberOfDistinctIslands<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "NumberOfDistinctIslands",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NumberOfIslands<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "NumberOfIslands",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NumberofAtoms<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "NumberofAtoms",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-OnlineStockSpan<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "OnlineStockSpan",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PartitionLabels<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "PartitionLabels",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-PrisonCellsAfterNDays<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "PrisonCellsAfterNDays",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RandomizedSet<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "RandomizedSet",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ReorderDataInLogFiles<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "ReorderDataInLogFiles",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RottingOranges<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "RottingOranges",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SearchA2DMatrixII<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SearchA2DMatrixII",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SearchSuggestionsSystem<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SearchSuggestionsSystem",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ShortestPathinBinaryMatrix<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "ShortestPathinBinaryMatrix",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SlidingWindowPoorva<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SlidingWindowPoorva",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SnakeGame<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SnakeGame",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SnakesandLadders<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SnakesandLadders",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SortCharactersByFrequency<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SortCharactersByFrequency",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Sorting<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SortingAlgorithms.Sorting",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SquaresOfASortedArray<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SquaresOfASortedArray",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SubtreeofAnotherTree<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "SubtreeofAnotherTree",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TicTacToe<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "TicTacToe",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TopKFrequentWords<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "TopKFrequentWords",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TrappingRainWater<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "TrappingRainWater",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TwoSum<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "TwoSum",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordBreak<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "WordBreak",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordBreakII<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "WordBreakII",
+            "projectName": "AmazonTop50_7574df6f",
+            "vmArgs": "-enableassertions"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordLadder<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "WordLadder",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-WordSearchII<AmazonTop50_7574df6f>",
+            "request": "launch",
+            "mainClass": "WordSearchII",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SAP1",
+            "request": "launch",
+            "mainClass": "SAP1"
+        }
+    ]
+}
