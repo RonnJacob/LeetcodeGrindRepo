@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Client",
+            "request": "launch",
+            "mainClass": "Design.PrototypePattern.Client",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - WordLadderII",
             "request": "launch",
             "mainClass": "WordLadderII",
