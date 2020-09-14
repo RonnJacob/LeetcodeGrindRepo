@@ -1,0 +1,14 @@
+- Defining an interface to create families of related or dependent objects without specifying their concrete classes.
+
+When we are instantiating code like this
+
+IObject a = new RonnObject()
+
+we know we're instantiating RonnObject, and that is public knowledge. We need to hide what class we're instantiating.
+Because this is essentially client code.
+
+Frameworks and Toolkits use Abstract Factory because these libraries work differently on different OS'
+
+Factory pattern creates a single product, where as an abstract factory method creates entire families of related products.
+
+Inheritance in Factory Pattern | Object composition by passing in the right factory to make complex objects.

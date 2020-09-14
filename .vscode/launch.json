@@ -6,6 +6,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FindMinimuminRotatedSortedArray",
+            "request": "launch",
+            "mainClass": "FindMinimuminRotatedSortedArray",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BaseballGame",
+            "request": "launch",
+            "mainClass": "BaseballGame",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client",
+            "request": "launch",
+            "mainClass": "Client",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TrySocket",
+            "request": "launch",
+            "mainClass": "Concepts.SlidingWindow.TrySocket",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaximumSumContiguous",
+            "request": "launch",
+            "mainClass": "Concepts.SlidingWindow.MaximumSumContiguous",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaximumSumSubarraySize",
+            "request": "launch",
+            "mainClass": "Design.AbstractFactoryPattern.MaximumSumSubarraySize",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client",
+            "request": "launch",
+            "mainClass": "Design.AbstractFactoryPattern.Client",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Client",
             "request": "launch",
             "mainClass": "Design.PrototypePattern.Client",
