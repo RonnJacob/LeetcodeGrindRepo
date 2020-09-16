@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FrogJump",
+            "request": "launch",
+            "mainClass": "FrogJump",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SlidingWindowMaximum",
+            "request": "launch",
+            "mainClass": "SlidingWindowMaximum",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SameStructure",
+            "request": "launch",
+            "mainClass": "SameStructure",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CoinChange",
+            "request": "launch",
+            "mainClass": "CoinChange",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ClimbingStairs",
+            "request": "launch",
+            "mainClass": "ClimbingStairs",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SAP",
+            "request": "launch",
+            "mainClass": "SAP",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SearchInRotatedArray",
+            "request": "launch",
+            "mainClass": "SearchInRotatedArray",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaximumProductSubarray",
+            "request": "launch",
+            "mainClass": "MaximumProductSubarray",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FindMinimuminRotatedSortedArray",
             "request": "launch",
             "mainClass": "FindMinimuminRotatedSortedArray",
