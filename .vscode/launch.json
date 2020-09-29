@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ArrayStringsCTCI",
+            "request": "launch",
+            "mainClass": "ArrayStringsCTCI",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AlienDict",
+            "request": "launch",
+            "mainClass": "AlienDict",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AlienDict",
+            "request": "launch",
+            "mainClass": "Trial.AlienDict",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MinCostToConnectAllEdges",
+            "request": "launch",
+            "mainClass": "MinCostToConnectAllEdges",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NetworkDelayTime",
+            "request": "launch",
+            "mainClass": "NetworkDelayTime",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Dijkstra",
+            "request": "launch",
+            "mainClass": "Dijkstra",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaxSubArrayWindow",
+            "request": "launch",
+            "mainClass": "MaxSubArrayWindow",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LCABST",
+            "request": "launch",
+            "mainClass": "LCABST",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FrogJump",
             "request": "launch",
             "mainClass": "FrogJump",

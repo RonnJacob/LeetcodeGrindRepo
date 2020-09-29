@@ -77,12 +77,42 @@ public class FrogJump{
     
 
     }
+    
+
+    public static boolean frogJumpDP(int[] arr){
+
+        Map<Integer, Set<Integer>> jumpMap = new TreeMap<>();
+
+        // This would be the list of numbers 
+        for(int num: arr){
+            jumpMap.put(num, new TreeSet<>());
+        }
+        jumpMap.get(0).add(0);
+        
+        // Iterate through the values.
+            for(int i=0; i<arr.length; i++){
+                int stoneLocation = arr[i];
+                for(Integer jump: jumpMap.get(stoneLocation)){
+                    for(int step = jump-1; step<=jump+1; step++){
+                        if(step>0 && jumpMap.containsKey(stoneLocation + step)){
+                            jumpMap.get(stoneLocation + step).add(step);
+                        }
+                    }
+                }
+            }
+
+
+        // Check if the values of the last element is empty. This basically tells us whether a particular value can be reached.
+        return !(jumpMap.get(arr[arr.length-1]).isEmpty());
+    }
     public static void main(String[] args){
         System.out.println("\n403. Frog Jump");
         int[] arr_test1 = new int[]{0,1,2,3,4,8,9,11};
         // System.out.println(canCross(arr_test1));
         FrogJump solution = new FrogJump();
-        solution.constructAdjacencyMatrix(arr_test1);
+        // solution.constructAdjacencyMatrix(arr_test1);
+        System.out.println(frogJumpDP(arr_test1));
+
     }
 
 
