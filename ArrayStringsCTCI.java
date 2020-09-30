@@ -192,6 +192,30 @@ public class ArrayStringsCTCI {
         }
     }
 
+    
+
+    public static void setZeroes(int[][] matrix){
+        boolean col0 = false;
+        int m = matrix.length;
+        int n = matrix[0].length;
+        for(int i=0; i<m ;i++){
+            if(matrix[i][0] == 0) col0 = true;
+            for(int j=1; j<n; j++){
+                if(matrix[i][j] == 0){
+                    matrix[i][0] = matrix[0][j] = 0;
+                }
+            }
+        }
+
+        for(int i=m-1; i>=0; i--){
+            for(int j=n-1; j>=1; j--){
+                if(matrix[i][0] == 0|| matrix[0][j] == 0) matrix[i][j] = 0;
+            }
+            if(col0){
+                matrix[i][0] = 0;
+            }
+        }
+    }
     public static void main(String[] args){
         System.out.println("\nCTCI : Arrays and Strings\n");
 
@@ -242,6 +266,14 @@ public class ArrayStringsCTCI {
         System.out.println(Arrays.deepToString(mat));
         rotateMatrix(mat);
         System.out.println(Arrays.deepToString(mat));
+        System.out.println();
+
+        // Set Matrix Zeroes
+        System.out.println("\n1.8 Set Matrix Zeroes\n");
+        int[][] matrix = new int[][]{{0,1,2,0},{3,4,5,2},{1,3,1,5}};
+        System.out.println(Arrays.deepToString(matrix));
+        setZeroes(matrix);
+        System.out.println(Arrays.deepToString(matrix));
         System.out.println();
 
         // String Rotation
