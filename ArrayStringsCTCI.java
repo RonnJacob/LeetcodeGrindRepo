@@ -123,6 +123,57 @@ public class ArrayStringsCTCI {
         s.append(charCounter);
         return s.toString();
     }
+
+    public static boolean oneAwayDeletionHelper(String shorterWord, String longerWord){
+        int i=0; 
+        int j=0;
+        int characterDiff = 0;
+        while(i<longerWord.length() && j<shorterWord.length()){
+            if(shorterWord.charAt(j) == longerWord.charAt(i)){
+                i++;
+                j++;
+            }
+            else{
+                characterDiff++;
+                if(characterDiff >1){
+                    return false;
+                }
+                i++;
+            }
+        }
+        return true;
+    }
+
+    public static boolean oneWayEditHelper(String shorterWord, String longerWord){
+        int i=0; 
+        int j=0;
+        int characterDiff = 0;
+        while(i<longerWord.length() && j<shorterWord.length()){
+            if(shorterWord.charAt(j) != longerWord.charAt(i)){
+                characterDiff++;
+                if(characterDiff >1){
+                    return false;
+                }
+            }
+            i++;
+            j++;
+        }
+        return true;
+    }
+    public static boolean oneAway(String word1, String word2){
+        
+        if(word1.length() ==  word2.length()+1 || word2.length() == word1.length() + 1){
+            String shorterString = word1.length() < word2.length()?word1: word2;
+            String longerString = word1.equals(shorterString) ? word2: word1;
+            return oneAwayDeletionHelper(shorterString, longerString);
+        }
+        else if(word1.length() == word2.length()){
+            return oneWayEditHelper(word1, word2);
+        }
+        else{
+            return false;
+        }
+    }
     
     public static void main(String[] args){
         System.out.println("\nCTCI : Arrays and Strings\n");
@@ -151,16 +202,24 @@ public class ArrayStringsCTCI {
 
         // Palindrome Permutation
         System.out.println("\n1.4 Palindrome Permutation\n");
-        String palPerm = "arcefdeecar";
-        System.out.println(palindromePermutation(palPerm) + " for " + palPerm);
+        String oneAwayExample = "pale";
+        System.out.println(palindromePermutation(oneAwayExample) + " for " + oneAwayExample);
         System.out.println();
 
-         // String Compression
-         System.out.println("\n1.5 String Compression\n");
-         String stringCompression = "aabcccccaaa";
-         System.out.println(stringCompression(stringCompression) + " for " + stringCompression);
-         System.out.println();
+        // One Away
+        System.out.println("\n1.5 One Away\n");
+        String oneAwayWord1 = "ab";
+        String oneAwayWord2 = "a";
+        System.out.println(oneAway(oneAwayWord1,oneAwayWord2) + " for words : " +  oneAwayWord1 + " and " + oneAwayWord2);
+        System.out.println();
 
+        // String Compression
+        System.out.println("\n1.6 String Compression\n");
+        String stringCompression = "aabcccccaaa";
+        System.out.println(stringCompression(stringCompression) + " for " + stringCompression);
+        System.out.println();
+
+         
     }
 
 
