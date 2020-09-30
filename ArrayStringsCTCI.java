@@ -1,4 +1,4 @@
-
+import java.util.Arrays;
 public class ArrayStringsCTCI {
 
     public static boolean isUnique(String word){
@@ -175,6 +175,23 @@ public class ArrayStringsCTCI {
         }
     }
     
+    public static boolean isRotation(String s1, String s2){
+        return (s1+s1).indexOf(s2) >= 0;
+    }
+
+    public static void rotateMatrix(int[][] matrix){
+        int n = matrix.length;
+        for(int x=0; x<n/2; x++){
+            for(int y=x; y<n-x-1; y++){
+                int temp = matrix[n-1-y][x];
+                matrix[n-1-y][x] = matrix[n-1-x][n-1-y];
+                matrix[n-1-x][n-1-y] = matrix[y][n-1-x];
+                matrix[y][n-1-x] = matrix[x][y];
+                matrix[x][y] = temp;
+            }
+        }
+    }
+
     public static void main(String[] args){
         System.out.println("\nCTCI : Arrays and Strings\n");
 
@@ -218,6 +235,22 @@ public class ArrayStringsCTCI {
         String stringCompression = "aabcccccaaa";
         System.out.println(stringCompression(stringCompression) + " for " + stringCompression);
         System.out.println();
+
+        // 2D array rotation
+        System.out.println("\n1.7 Matrix Rotation by 90 degrees\n");
+        int[][] mat = new int[][]{{1,2,3}, {4,5,6}, {7,8,9}};
+        System.out.println(Arrays.deepToString(mat));
+        rotateMatrix(mat);
+        System.out.println(Arrays.deepToString(mat));
+        System.out.println();
+
+        // String Rotation
+        System.out.println("\n1.9 String Rotation\n");
+        String rot1 = "waterbottle";
+        String rot2 = "erbottlewat";
+        System.out.println(isRotation(rot1, rot2));
+        System.out.println();
+
 
          
     }
