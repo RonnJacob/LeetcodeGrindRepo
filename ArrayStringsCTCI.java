@@ -1,7 +1,5 @@
-import java.util.Arrays;
 
 public class ArrayStringsCTCI {
-
 
     public static boolean isUnique(String word){
         int[] charChecker = new int[26];
@@ -99,9 +97,33 @@ public class ArrayStringsCTCI {
             }
             
         }
-
         return evenValue == 0 || evenValue == -1;
     }
+
+    public static String stringCompression(String word){
+        StringBuilder s = new StringBuilder("");
+        if(word.length() == 0) return "";
+        if(word.length() == 1) return (word + "1");
+
+        Character currChar = word.charAt(0);
+        int charCounter = 1;
+        for(int i=1; i<word.length(); i++){
+            if(word.charAt(i) != word.charAt(i-1)){
+                s.append(currChar);
+                s.append(charCounter);
+                charCounter = 1;
+                currChar = word.charAt(i);
+            }
+            else{
+                charCounter++;
+            }
+        }
+
+        s.append(currChar);
+        s.append(charCounter);
+        return s.toString();
+    }
+    
     public static void main(String[] args){
         System.out.println("\nCTCI : Arrays and Strings\n");
 
@@ -132,6 +154,12 @@ public class ArrayStringsCTCI {
         String palPerm = "arcefdeecar";
         System.out.println(palindromePermutation(palPerm) + " for " + palPerm);
         System.out.println();
+
+         // String Compression
+         System.out.println("\n1.5 String Compression\n");
+         String stringCompression = "aabcccccaaa";
+         System.out.println(stringCompression(stringCompression) + " for " + stringCompression);
+         System.out.println();
 
     }
 
