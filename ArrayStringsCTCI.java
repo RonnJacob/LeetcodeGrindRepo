@@ -82,6 +82,26 @@ public class ArrayStringsCTCI {
        }
        return new String(characterArray);
     }
+
+    public static boolean palindromePermutation(String word){
+        int[] counter = new int[26];
+        int evenValue= 0;
+        for(Character c: word.toLowerCase().toCharArray()){
+            if(c != ' '){
+
+                counter[c-'a'] += 1;
+                if(counter[c-'a']%2 == 0){
+                    evenValue++;
+                }
+                else{
+                    evenValue--;
+                }
+            }
+            
+        }
+
+        return evenValue == 0 || evenValue == -1;
+    }
     public static void main(String[] args){
         System.out.println("\nCTCI : Arrays and Strings\n");
 
@@ -101,13 +121,20 @@ public class ArrayStringsCTCI {
         System.out.println();
 
         // URLify
-        System.out.println("1.3 URLify");
+        System.out.println("\n1.3 URLify\n");
         String urlString = "Mr John Smith    ";
         System.out.println(URLify(urlString));
+        System.out.println();
 
 
-
+        // Palindrome Permutation
+        System.out.println("\n1.4 Palindrome Permutation\n");
+        String palPerm = "arcefdeecar";
+        System.out.println(palindromePermutation(palPerm) + " for " + palPerm);
+        System.out.println();
 
     }
+
+
     
 }
