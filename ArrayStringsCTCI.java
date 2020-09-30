@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayStringsCTCI {
 
 
@@ -52,6 +54,34 @@ public class ArrayStringsCTCI {
         return false;
     }
 
+
+    public static String URLify(String word){
+       int characterCounter = 0;
+       int lastCharacterIndex = 0;
+       int spaceCounter = 0;
+       for(int i=0; i<word.length(); i++){
+           if(word.charAt(i)!= ' ') {
+                lastCharacterIndex = i;
+                characterCounter += 1;
+           }
+       }
+       spaceCounter = lastCharacterIndex+1-characterCounter;
+       int actualIndex = (spaceCounter * 3) + characterCounter-1;
+       char[] characterArray = word.toCharArray();
+       while(lastCharacterIndex >= 0){
+           if(characterArray[lastCharacterIndex] != ' '){
+               characterArray[actualIndex--] = characterArray[lastCharacterIndex--];
+           }
+           else{
+               characterArray[actualIndex] = '0';
+               characterArray[actualIndex-1] = '2';
+               characterArray[actualIndex-2] = '%';
+               actualIndex -= 3;
+               lastCharacterIndex--;
+           }
+       }
+       return new String(characterArray);
+    }
     public static void main(String[] args){
         System.out.println("\nCTCI : Arrays and Strings\n");
 
@@ -69,6 +99,13 @@ public class ArrayStringsCTCI {
         String word2 = "abdboaoo";
         System.out.println(checkPermutation(word1, word2));
         System.out.println();
+
+        // URLify
+        System.out.println("1.3 URLify");
+        String urlString = "Mr John Smith    ";
+        System.out.println(URLify(urlString));
+
+
 
 
     }
