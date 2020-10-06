@@ -1,9 +1,0 @@
-== Factory Pattern == 
-
-|   A factory produces goods, a software factory produces objects   | 
-
-
-We must almost always code to an interface, and not to an implementation. Tightly coupling code to an interface,
-and not to an implementation.
-
-Producing various objects through inheritance is factory pattern.

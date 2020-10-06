@@ -64,5 +64,8 @@ public class Trie {
 
         return true;
     }
+
+	public void findWords(char[][] board, String[] words) {
+	}
     
 }

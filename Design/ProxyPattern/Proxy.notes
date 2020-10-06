@@ -1,7 +1,0 @@
-== Proxy ==
-
-- There is a proxy, subject and real subject
-
-Both the classes implement the same interface. We receive request on one class, and invoke the other class methods with a service call or over the internet.
-
-Marshalling for sending method parameters over the wire and the subject unmarshalls them back into objects.

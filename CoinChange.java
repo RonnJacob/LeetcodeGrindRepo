@@ -1,11 +1,5 @@
 public class CoinChange {
 
-    // You have a function 
-    // Say F(S) = F(S-c1) + 1
-
-    // when F(S) = 0 we have return 0
-    // when F(S) = -1 when n = 0;
-    
     public int coinChange(int[] coins, int amount) {
         if(amount < 1){
             return 0;
@@ -43,7 +37,7 @@ public class CoinChange {
         int amount = 3;
         CoinChange sol = new CoinChange();
         if(sol.coinChange(coins, amount)!=-1){
-            System.out.println(coins.length*coins);
+            System.out.println(sol.coinChange(coins, amount));
         }
 
     }

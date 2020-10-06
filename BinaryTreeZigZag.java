@@ -1,23 +1,9 @@
 import java.util.*;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode() {}
-    TreeNode(int val) { this.val = val; }
-    TreeNode(int val, TreeNode left, TreeNode right) {
-    this.val = val;
-    this.left = left;
-            this.right = right;
-    }
- }
 
 public class BinaryTreeZigZag {
 
-
-    
-    public static void BinaryTreeZigZag(TreeNode root){
+    public static void BinaryTreeZigZagMethod(TreeNode root){
 
         if(root == null){
             return;
@@ -56,9 +42,10 @@ public class BinaryTreeZigZag {
                 result.add(levelQueue);
                 levelQueue = new LinkedList<>();
 
-                if(nodeQueue.size() > 0){
+                if(nodeQueue.isEmpty()){
                     nodeQueue.addLast(null);
                 }
+                
                 leftOrder = leftOrder == true ? false: true;
             }
         }
@@ -81,7 +68,7 @@ public class BinaryTreeZigZag {
         root.right.right = new TreeNode(7);
 
 
-        BinaryTreeZigZag(root);
+        BinaryTreeZigZagMethod(root);
     }
     
 }

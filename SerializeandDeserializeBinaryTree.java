@@ -1,12 +1,5 @@
 import java.util.*;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-    TreeNode(int x) { val = x; }
-}
-
 public class SerializeandDeserializeBinaryTree {
     
     // Encodes a tree to a single string.

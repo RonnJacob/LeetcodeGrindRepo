@@ -9,6 +9,27 @@
             "name": "CodeLens (Launch) - ArrayStringsCTCI",
             "request": "launch",
             "mainClass": "ArrayStringsCTCI",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FirstNonRepeatingIntegerInArray",
+            "request": "launch",
+            "mainClass": "FirstNonRepeatingIntegerInArray",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LinkedListCTCI",
+            "request": "launch",
+            "mainClass": "LinkedListCTCI",
+            "projectName": "AmazonTop50_7574df6f"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArrayStringsCTCI",
+            "request": "launch",
+            "mainClass": "ArrayStringsCTCI",
             "projectName": "AmazonTop50_7574df6f"
         },
         {

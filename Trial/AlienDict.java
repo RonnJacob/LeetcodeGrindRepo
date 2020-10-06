@@ -1,3 +1,6 @@
+package Trial;
+
+import java.util.*;
 public class AlienDict{
 
     public void createMapping(String[] words){

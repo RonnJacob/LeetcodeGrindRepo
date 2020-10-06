@@ -24,14 +24,14 @@ public class Citrix {
         return count;
     }
 
-    static int countPairs2(List<Integer> numbers, int k){
+    static int countPairs2(List<Integer> numbers, int k, int[] arr){
         int count = 0; 
         Arrays.sort(arr); // Sort array elements 
     
         numbers.sort((a,b)->Integer.compare(a,b));
         int l = 0; 
         int r = 0; 
-        while(r < n) 
+        while(r < arr.length) 
         { 
             if(arr[r] - arr[l] == k) 
             { 

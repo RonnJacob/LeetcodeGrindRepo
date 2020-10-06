@@ -18,7 +18,7 @@ public class AlienDict {
             String word2 = words[i+1];
             int index = 0;
             if(word1.length() > word2.length()){
-                return "";
+                return;
             }
             while(index < word1.length() && index < word2.length()){
                 if(word1.charAt(index) != word2.charAt(index)){
