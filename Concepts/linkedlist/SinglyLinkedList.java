@@ -89,15 +89,44 @@ public class SinglyLinkedList<T> {
     }
 
 
+    //Detects loop in the given linked list
+    public static <T> boolean detectLoop(SinglyLinkedList<T> list) {
+        SinglyLinkedList<T>.Node hare = list.headNode;
+        SinglyLinkedList<T>.Node turtle = list.headNode;
+
+        while(turtle!=null && hare!=null){
+            turtle = turtle.nextNode;
+
+            // move the hare by 2 steps if possible.
+            hare = hare.nextNode;
+            if(hare == null){
+                return false;
+            }
+            else{
+                hare = hare.nextNode;
+            }
+
+            if(hare == turtle){
+                return true;
+            }
+
+        }
+
+
+        return false;
+    }
+
+    public static <T> Object findMiddle(SinglyLinkedList<T> list) {
+        // Write -- Your -- Code
+          return -1;
+    }
+
     public static void main(String[] args){
         SinglyLinkedList<Integer> solution = new SinglyLinkedList<>();
         System.out.println(solution.isEmpty());
-        solution.insertAtEnd(2);
-        solution.insertAtEnd(3);
-        solution.insertAtEnd(4);
-        solution.printLinkedList();
-        solution.deleteByValue(2);
-        solution.printLinkedList();
+        solution.insertAtEnd(data);
+
+        System.out.println(detectLoop(solution));
     }
     
 }

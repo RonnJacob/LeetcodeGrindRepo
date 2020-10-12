@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DoublyLinkedList",
+            "request": "launch",
+            "mainClass": "concepts.linkedlist.DoublyLinkedList",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SinglyLinkedList",
+            "request": "launch",
+            "mainClass": "concepts.linkedlist.SinglyLinkedList",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ArraysGrind",
+            "request": "launch",
+            "mainClass": "concepts.arrays.ArraysGrind",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Question1",
+            "request": "launch",
+            "mainClass": "test.Question1",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ArrayStringsCTCI",
             "request": "launch",
             "mainClass": "ArrayStringsCTCI",
