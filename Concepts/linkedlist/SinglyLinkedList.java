@@ -117,16 +117,42 @@ public class SinglyLinkedList<T> {
     }
 
     public static <T> Object findMiddle(SinglyLinkedList<T> list) {
-        // Write -- Your -- Code
-          return -1;
+        SinglyLinkedList<T>.Node hare = list.headNode;
+        SinglyLinkedList<T>.Node turtle = list.headNode;
+        if(turtle == null){
+            return null;
+        }
+
+        if(turtle.nextNode == null){
+            return turtle.data;
+        }
+
+        
+
+        while(hare!=null && hare.nextNode!=null){
+            hare = hare.nextNode.nextNode;
+            if(hare != null){
+                turtle = turtle.nextNode;
+            }
+        }
+
+
+        return turtle.data;
+        // 122 -> 11 -> 8 -> 5 -> 2 -> 90 -> null
+        // 122 | 8
+        // 11 | 2
+        // 8 | 
     }
 
     public static void main(String[] args){
         SinglyLinkedList<Integer> solution = new SinglyLinkedList<>();
         System.out.println(solution.isEmpty());
-        solution.insertAtEnd(data);
-
-        System.out.println(detectLoop(solution));
+        solution.insertAtEnd(22);
+        solution.insertAtEnd(21);
+        solution.insertAtEnd(10);
+        solution.insertAtEnd(14);
+        solution.insertAtEnd(7);
+        System.out.println(findMiddle(solution));
     }
     
 }
