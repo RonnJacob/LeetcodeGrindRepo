@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MaximumProductSubarray",
+            "request": "launch",
+            "mainClass": "blind.MaximumProductSubarray",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MaximumProductSubarray",
+            "request": "launch",
+            "mainClass": "MaximumProductSubarray",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MaximumSubarray",
             "request": "launch",
             "mainClass": "MaximumSubarray",
