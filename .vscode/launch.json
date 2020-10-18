@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SearchRotatedArray",
+            "request": "launch",
+            "mainClass": "blind.SearchRotatedArray",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MinimumInRotatedSortedArray",
             "request": "launch",
             "mainClass": "blind.MinimumInRotatedSortedArray",
