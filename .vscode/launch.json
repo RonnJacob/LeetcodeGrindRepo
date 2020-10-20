@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DecodeWays",
+            "request": "launch",
+            "mainClass": "blind.DecodeWays",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LongestIncreasingSubsequence",
             "request": "launch",
             "mainClass": "blind.LongestIncreasingSubsequence",
