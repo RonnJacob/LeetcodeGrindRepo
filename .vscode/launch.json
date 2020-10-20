@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HouseRobber",
+            "request": "launch",
+            "mainClass": "blind.HouseRobber",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - climbStairs",
             "request": "launch",
             "mainClass": "blind.climbStairs",
