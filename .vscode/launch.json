@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LongestCommonSubsequence",
+            "request": "launch",
+            "mainClass": "blind.LongestCommonSubsequence",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HouseRobberII",
             "request": "launch",
             "mainClass": "blind.HouseRobberII",
