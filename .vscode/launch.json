@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - climbStairs",
+            "request": "launch",
+            "mainClass": "blind.climbStairs",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SumOfTwoIntegers",
+            "request": "launch",
+            "mainClass": "blind.SumOfTwoIntegers",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ContainerWithMostWater",
             "request": "launch",
             "mainClass": "blind.ContainerWithMostWater",
