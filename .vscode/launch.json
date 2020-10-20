@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CoinChangeDP",
+            "request": "launch",
+            "mainClass": "blind.CoinChangeDP",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - coinChange",
+            "request": "launch",
+            "mainClass": "blind.coinChange",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HouseRobber",
             "request": "launch",
             "mainClass": "blind.HouseRobber",
