@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - JumpGame",
+            "request": "launch",
+            "mainClass": "blind.JumpGame",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UniquePaths",
+            "request": "launch",
+            "mainClass": "blind.UniquePaths",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - WordBreak",
+            "request": "launch",
+            "mainClass": "blind.WordBreak",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CombinationSumIV",
             "request": "launch",
             "mainClass": "blind.CombinationSumIV",
