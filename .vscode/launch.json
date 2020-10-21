@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PacificAtlanticWaterFlow",
+            "request": "launch",
+            "mainClass": "blind.PacificAtlanticWaterFlow",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - JumpGame",
             "request": "launch",
             "mainClass": "blind.JumpGame",
