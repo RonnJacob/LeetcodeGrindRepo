@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MeetingRooms",
+            "request": "launch",
+            "mainClass": "blind.MeetingRooms",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NumberofConnectedComponentsInUndirectedGraph",
             "request": "launch",
             "mainClass": "blind.NumberofConnectedComponentsInUndirectedGraph",
