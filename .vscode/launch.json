@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - NonOverlappingIntervals",
+            "request": "launch",
+            "mainClass": "blind.NonOverlappingIntervals",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MeetingRoomsII",
+            "request": "launch",
+            "mainClass": "blind.MeetingRoomsII",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - mergeIntervals",
+            "request": "launch",
+            "mainClass": "blind.mergeIntervals",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InsertInterval",
+            "request": "launch",
+            "mainClass": "blind.InsertInterval",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MeetingRooms",
             "request": "launch",
             "mainClass": "blind.MeetingRooms",
