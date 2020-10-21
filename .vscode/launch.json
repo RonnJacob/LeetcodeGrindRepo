@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CombinationSumIV",
+            "request": "launch",
+            "mainClass": "blind.CombinationSumIV",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LongestCommonSubsequence",
             "request": "launch",
             "mainClass": "blind.LongestCommonSubsequence",
