@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - NumberofConnectedComponentsInUndirectedGraph",
+            "request": "launch",
+            "mainClass": "blind.NumberofConnectedComponentsInUndirectedGraph",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GraphValidTree",
             "request": "launch",
             "mainClass": "blind.GraphValidTree",
