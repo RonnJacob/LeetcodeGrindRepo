@@ -39,6 +39,18 @@ public class MaximumDepthOfBinaryTree {
        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 
+    public static TreeNode invertTree(TreeNode root) {
+
+        if(root == null){
+            return null;
+        }
+        TreeNode r = new TreeNode(root.val);
+        r.left = invertTree(root.right);
+        r.right = invertTree(root.left);
+
+        return r;
+    }
+
     public static void main(String[] args){
         System.out.println("\n104. Maximum Depth of Binary Tree");
         TreeNode root =new TreeNode(3);
