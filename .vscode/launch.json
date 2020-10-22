@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LongestRepeatingCharacterReplacement",
+            "request": "launch",
+            "mainClass": "blind.LongestRepeatingCharacterReplacement",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LongestSubstringWithoutRepeatingCharacters",
             "request": "launch",
             "mainClass": "blind.LongestSubstringWithoutRepeatingCharacters",
