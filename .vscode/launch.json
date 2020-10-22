@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RemoveNthNodeFromEndOfList",
+            "request": "launch",
+            "mainClass": "blind.RemoveNthNodeFromEndOfList",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ReorderList",
             "request": "launch",
             "mainClass": "blind.ReorderList",
