@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RotateImage",
+            "request": "launch",
+            "mainClass": "blind.RotateImage",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SpiralMatrix",
             "request": "launch",
             "mainClass": "blind.SpiralMatrix",
