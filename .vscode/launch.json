@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ReorderList",
+            "request": "launch",
+            "mainClass": "blind.ReorderList",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - NonOverlappingIntervals",
             "request": "launch",
             "mainClass": "blind.NonOverlappingIntervals",
