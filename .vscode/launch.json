@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - setMatrixZeroes",
+            "request": "launch",
+            "mainClass": "blind.setMatrixZeroes",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MergekSortedLists",
+            "request": "launch",
+            "mainClass": "blind.MergekSortedLists",
+            "projectName": "leetcode-grind_e8f94a84"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RemoveNthNodeFromEndOfList",
             "request": "launch",
             "mainClass": "blind.RemoveNthNodeFromEndOfList",
